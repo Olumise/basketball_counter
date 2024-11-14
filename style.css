@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'cursed_timer_ulilregular';
+    src: url('font/cursedtimer/cursedtimerulil-aznm-webfont.woff2') format('woff2'),
+         url('font/cursedtimer/cursedtimerulil-aznm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    align-content: center;
+    background-color: #1B244;
+    position: relative;
+    
+}
+
+h2{
+    font-family: 'cursed_timer_ulilregular'; 
+    font-size: 50px;
+    margin: 0;
+   
+}
+
+h2.bg-score{
+    font-family: 'cursed_timer_ulilregular'; 
+    font-size: 50px;
+    margin: 0;
+    opacity: 0.2;
+    position: absolute;
+}
+h3#winning{
+    font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+    font-size: 40px;
+    margin: 0;
+    color:white;
+    height:40px;
+    }
+
+h3{
+    font-size: 40px;
+    margin: 0;
+ font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;    
+}
+
+p {
+    margin: 0;
+    font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+.body-holder {
+    background-image: url('img/162545-3840x2160-desktop-4k-basketball-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allows the overlay to position absolutely */
+}
+
+.body-holder::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(27, 36, 74, 0.9); /* Blue color with 60% opacity */
+    z-index: 1; /* Ensures the overlay stays above the background but below the content */
+}
+
+.container{
+/* height: 100%; */
+max-width: 40rem;
+width:100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+position: relative;
+padding: 55px;
+color: white;
+position: relative;
+z-index: 2;
+}
+
+.logo{
+    width: 100px;
+    height: 80px;;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.board-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.scoreboard{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 40px;
+    min-width: 130px;
+    border-radius: 10px;
+}
+
+.counter-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+}
+
+
+.counter{
+display: flex;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+border: 2px solid #9AABD8;
+background: transparent;
+color: white;
+border-radius: 5px;
+width: 45px;
+height: 45px;
+font-size: 18px;
+font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.counter:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 0px solid #9aabd8;
+    background: transparent;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    }
+
+    .controls{
+        z-index: 3;
+
+    }
+
+    .reset{
+        background-color: red;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 5px;
+        color: white;
+        font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 18px;
+    }
+
+    .reset:hover{
+        background-color: rgb(255, 255, 255);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 5px;
+        color: black;
+        font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 18px;
+    }
+
+    #end-tag{
+        color:white;
+        z-index: 3;
+        position: absolute;
+        right: 10px;;
+        bottom:0;
+        opacity: 0.3;
+    }

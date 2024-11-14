@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="body-holder">
+        <div class="controls">
+            <h3 id="winning"> </h3>
+        </div>
+    <div class="container">
+        <div class="board">
+            <div class="board_title">
+                <img class="logo" src="img/Los_Angeles_Lakers_logo.svg" alt="">
+            <!-- <h3> HOME </h3> -->
+        </div>
+            <div class="scoreboard">
+                <h2 id="home-score"> 2 </h2>
+                <h2 class="bg-score"> 000 </h2>
+            </div>
+            <div class="counter-group">
+                <button class="counter" onclick="add1Home()">
+                    +1 
+                </button>
+                <button class="counter" onclick="add3Home()">
+                    +3
+                </button>
+                <button class="counter" onclick="add6Home()">
+                    +6
+                </button>
+            </div>
+        </div>
+        <div class="board">
+            <div class="board_title">
+                <img class="logo" src="img/Logo_of_the_Detroit_Pistons.svg" alt="">
+            <!-- <h3> HOME </h3> -->
+        </div>
+            <div class="scoreboard">
+                <h2 id="away-score"> 0 </h2>
+                <h2 class="bg-score"> 000 </h2>
+            </div>
+            <div class="counter-group">
+                <button class="counter" onclick="add1Away()">
+                    +1 
+                </button>
+                <button class="counter" onclick="add3Away()">
+                    +3
+                </button>
+                <button class="counter" onclick="add6Away()">
+                    +6
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="controls">
+        <button class="reset" onclick="reset()"> RESET GAME </button>
+    </div>
+    <p id="end-tag"> OLUMISE</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
